@@ -1,25 +1,28 @@
 
-//----------Variables----------
-// Led pinout
-int ledA = 4;
-int ledB = 8;
+//----Variables----
 
+// Led pinout
+int ledA = 12;
+int ledB = 13;
+  
 // Siren pinout
-int siren = 3;
+int siren = 11;
 
 // Button pinout
-int buttonA = 12;
-int buttonB = 7;
-int buttonC = 2;
+int buttonA = 3;
+int buttonB = 2;
+int buttonC = 1;
 
-// State variables
+// Read state variables
 bool stateA, stateB, stateC;
-//-----------------------------
 
-//----------Program------------
+//-------------------
+
+//----Program----
+
 void setup() {
 
-  // Setting output leds and siren
+  // Setting OUTPUT leds and siren
   pinMode(ledA, OUTPUT);
   pinMode(ledB, OUTPUT);
   pinMode(siren, OUTPUT);
@@ -38,11 +41,11 @@ void loop() {
   if(stateC){
     if(!digitalRead(ledA) && !digitalRead(ledB)){
 
-      // Get player button states (A and B)
+      // Getting state of player buttons (A and B)
       stateA = digitalRead(buttonA);
       stateB = digitalRead(buttonB);
 
-      // Activating led of player A/B
+      // Activating 
       if(!stateA && stateB)
         digitalWrite(ledA, HIGH);
       else if(stateA && !stateB)
@@ -56,7 +59,7 @@ void loop() {
       }
     }
   }else{
-    // Reseting states, leds and siren
+    // Resetting states, leds and siren
     stateA = LOW;
     stateB = LOW;
     stateC = LOW;
@@ -65,4 +68,5 @@ void loop() {
     digitalWrite(siren, LOW);
   } 
 }
-//-----------------------------
+
+//-------------------
