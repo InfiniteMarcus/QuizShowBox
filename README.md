@@ -2,11 +2,11 @@
 
 ## About The Project
 
-### List of componenets
-
 ## Getting Started
 
 ### Prerequisites
+
+### List of componenets
 
 ### Installation
 
