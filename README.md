@@ -1,22 +1,18 @@
 # QuizShowBox
 
+Choose a README language:
+- 👉 **English**
+- [Portuguese](https://github.com/InfiniteMarcus/QuizShowBox/blob/main/README_pt-br.md)
+
 ## About The Project
 
 ## Getting Started
 
-### Prerequisites
+### Circuit
+
+![Circuit image](https://github.com/InfiniteMarcus/QuizShowBox/blob/main/imgs/circuit.png)
 
 ### List of componenets
-
-### Installation
-
-## Usage
-
-## Images
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Author
 
